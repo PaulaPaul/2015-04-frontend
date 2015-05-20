@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Store</title>
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link href="style.css" rel="stylesheet">
+</head>
+
+ <body>
+  <!-- Navigation -->
+  <nav class="navbar-inverse" role="navigation">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="store.html">Bootstrap Store</a>
+      </div>
+       <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#"  class="active dropdown-toggle" data-toggle="dropdown">Categories <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="category.html">Apparel  &amp; Accessories</a></li>
+              <li><a href="category.html">Baby Products</a></li>
+              <li><a href="category.html">Beauty  &amp; Health</a></li>
+              <li><a href="category.html">Electronics</a></li>
+              <li><a href="category.html">Furniture</a></li>
+              <li><a href="category.html">Home  &amp; Garden</a></li>
+              <li><a href="category.html">Luggage  &amp; Bags</a></li>
+              <li><a href="category.html">Shoes</a></li>
+              <li><a href="category.html">Sports  &amp; Entertainment</a></li>
+              <li><a href="category.html">Watches</a></li>
+              <li class="divider"></li>
+              <li><a href="store.html">All Categories</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+		<ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="badge pull-right">4</span><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+          <li><a href="account.html"><i class="glyphicon glyphicon-user"></i></a></li>
+          <li><a href="#" data-toggle="modal" data-target="#myModal">Sign in</a></li>
+        </ul>
+		</div><!-- /.navbar-collapse -->
+    </div> <!-- /.container-fluid -->
+  </nav>
+   <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <h2 class="modal-title" id="myModalLabel">Sign in</h2>
+        </div>
+        <div class="modal-body">
+          <form class="form-signin" role="form">
+            <h3 class="form-signin-heading">Sign in with your email address</h3>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Email address" required autofocus>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="Password" required>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+          </form>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-3">
+            <a href="#" class="btn btn-facebook btn-large btn-caps btn-block">Facebook <span class="icon-facebook"></span></a>
+          </div>
+          <div class="col-xs-3">
+            <a href="" class="btn btn-twitter btn-large btn-caps btn-block">Twitter <span class="icon-twitter"></span></a>
+          </div>
+          <div class="col-xs-3">
+            <a href="" class="btn btn-lg btn-caps btn-block"> <span class="icon-dribbble"></span></a>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>  
+  
+  <!-- Page Content -->
+  <div id="content" class="container">
+   <div class="row">
+     <div class="col-md-3">
+        <h3 class="">Manage Orders</h3>
+        <div class="list-group">
+          <a href="account.html" class="list-group-item">All Order</a>
+          <a href="account.html" class="list-group-item">Manage Feedback</a>
+          <a href="account.html" class="list-group-item">My Coupons</a>
+          <a href="account.html" class="list-group-item">My Shipping Address</a>
+        </div>
+      </div>
+	 <div class="col-md-9">
+
+        <h3>Orders Status</h3>
+
+
+       <div class="thumbnail">
+          <div class="row">
+            <div class="col-sm-1">
+              <img class="img-responsive" src="http://placehold.it/750x600" alt="" />
+            </div>
+            <div class="col-sm-4">
+              <a href="product.html">Product Name</a>
+            </div>
+            <div class="col-sm-1">
+              1
+            </div>
+            <div class="col-sm-2">
+              $49.99
+            </div>
+            <div class="col-sm-2">
+              <button class="btn btn-sm btn-default">Track</button>
+            </div>
+            <div class="col-sm-2">
+              <a href="#">1 Message</a>
+            </div>
+          </div>
+       </div>
+	   
+	   <div class="thumbnail">
+          <div class="row">
+            <div class="col-sm-1">
+              <img class="img-responsive" src="http://placehold.it/750x600" alt="" />
+            </div>
+            <div class="col-sm-4">
+              <a href="product.html">Product Name</a>
+            </div>
+            <div class="col-sm-1">
+              1
+            </div>
+            <div class="col-sm-2">
+              $19.99
+            </div>
+            <div class="col-sm-2">
+              <button class="btn btn-sm btn-success">Completed</button>
+            </div>
+            <div class="col-sm-2">
+              <a href="#">1 Message</a>
+            </div>
+          </div>
+        </div>
+		
+		<div class="thumbnail">
+          <div class="row">
+            <div class="col-sm-1">
+              <img class="img-responsive" src="http://placehold.it/750x600" alt="" />
+            </div>
+            <div class="col-sm-4">
+              <a href="product.html">Product Name</a>
+            </div>
+            <div class="col-sm-1">
+              1
+            </div>
+            <div class="col-sm-2">
+              $39.99
+            </div>
+            <div class="col-sm-2">
+              <button class="btn btn-sm btn-danger">Cancelled</button>
+            </div>
+            <div class="col-sm-2">
+              <a href="#">0 Messages</a>
+            </div>
+          </div>
+        </div>
+		
+		<div class="thumbnail">
+          <div class="row">
+            <div class="col-sm-1">
+              <img class="img-responsive" src="http://placehold.it/750x600" alt="" />
+            </div>
+            <div class="col-sm-4">
+              <a href="product.html">Product Name</a>
+            </div>
+            <div class="col-sm-1">
+              1
+            </div>
+            <div class="col-sm-2">
+              $49.99
+            </div>
+            <div class="col-sm-2">
+              <button class="btn btn-sm btn-default">Track</button>
+            </div>
+            <div class="col-sm-2">
+              <a href="#">1 Message</a>
+            </div>
+          </div>
+       </div>
+	   
+	   <div class="thumbnail">
+          <div class="row">
+            <div class="col-sm-1">
+              <img class="img-responsive" src="http://placehold.it/750x600" alt="" />
+            </div>
+            <div class="col-sm-4">
+              <a href="product.html">Product Name</a>
+            </div>
+            <div class="col-sm-1">
+              1
+            </div>
+            <div class="col-sm-2">
+              $19.99
+            </div>
+            <div class="col-sm-2">
+              <button class="btn btn-sm btn-success">Completed</button>
+            </div>
+            <div class="col-sm-2">
+              <a href="#">1 Message</a>
+            </div>
+          </div>
+        </div>
+		
+		<div class="thumbnail">
+          <div class="row">
+            <div class="col-sm-1">
+              <img class="img-responsive" src="http://placehold.it/750x600" alt="" />
+            </div>
+            <div class="col-sm-4">
+              <a href="product.html">Product Name</a>
+            </div>
+            <div class="col-sm-1">
+              1
+            </div>
+            <div class="col-sm-2">
+              $49.99
+            </div>
+            <div class="col-sm-2">
+              <button class="btn btn-sm btn-default">Track</button>
+            </div>
+            <div class="col-sm-2">
+              <a href="#">1 Message</a>
+            </div>
+          </div>
+       </div>
+	   <div class="col-sm-12 center">
+          <ul class="pagination">
+            <li class="disabled"><a href="#">&laquo;</a></li>
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">&raquo;</a></li>
+          </ul>
+        </div>
+	 </div>
+   </div>	  
+  </div>  <!-- div element with the content as id and a .container class -->
+   <div class="container">
+   <hr>
+    <!-- Footer -->
+    <footer>
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Copyright &copy; <a href="store.html">your company</a> 2015</p>
+        </div>
+      </div>
+    </footer>
+	  </div>  <!-- div element ending with container class for footer -->
+
+  <!-- jQuery Version 1.11.0 -->
+  <script src="js/jquery-1.11.1.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.js"></script>
+ </body>
+</html>

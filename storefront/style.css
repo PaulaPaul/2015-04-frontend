@@ -1,0 +1,50 @@
+.center {
+  text-align: center;
+}
+
+#content {
+  margin-top: 20px;
+}
+#content h3 {
+  margin-top: 0;
+}
+
+.add-to-cart {
+  text-align: center;
+  font-size: 32px;
+  padding: 0;
+  margin: 0;
+  height: 8px;
+  position: relative;
+}
+.add-to-cart a {
+  background: #fff;
+  top: -18px;
+  border-radius: 16px;
+}
+.add-to-cart a:hover {
+  text-decoration: none;
+}
+
+.thumbnails {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.number {
+  clear: both;
+  min-height: 30px;
+}
+.number label {
+  float: left;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+.number input {
+  display: inline-block;
+  width: 20%;
+}
+
+footer {
+  text-align: center;
+}
