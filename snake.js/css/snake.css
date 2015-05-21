@@ -1,0 +1,11 @@
+body {
+   max-width: 100%;
+   text-align:center;
+   font-family:"Courier";
+   background-color:#A1A2A5;
+   color:#D3E5EF;
+}
+
+canvas{
+  border: solid #D3E5EF 2px;
+}
