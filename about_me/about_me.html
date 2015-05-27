@@ -1,0 +1,87 @@
+<html>
+<head>
+	<title>Paula</title>
+	<link href='http://fonts.googleapis.com/css?family=Averia+Libre:400,400italic,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="about_me.css">
+	<script>
+	function toggleButton() 
+	{
+		var bubs = document.getElementsByName("bubblepic");
+		if (document.getElementById('theButton').innerHTML == "Let's take a spin!") {
+			for (var i = bubs.length - 1; i >= 0; i--)	{
+		  		bubs[i].className = "photobubble";
+		  		document.getElementById('theButton').innerHTML = "Stop this crazy spinning!!!";
+			}
+		}
+		else {
+			for (var i = bubs.length - 1; i >= 0; i--)	{
+			  bubs[i].className = "nobubble";
+			  document.getElementById('theButton').innerHTML = "Let's take a spin!";
+			}
+		}
+
+	}
+	</script>
+</head>
+<body id="aboutpaula">
+
+<div id="pagewrapper">
+	<div id="header">
+		<h1>Paula</h1>
+		<button class="button" id="theButton" onclick="toggleButton()">Stop this crazy spinning!!!</button>
+	</div>
+	<div id="sidebar">
+		<div class="sidesection">
+			<img class="photobubble" name="bubblepic" src="img/paula_IBMPromo.jpg">
+			<div id="contentwrapper">
+				<p>I have been making computers do things for a long time!</p>
+        	<!-- stuff about me goes here -->
+			</div>
+		</div>
+
+		<div class="sidesection">
+			<img class="photobubble" name="bubblepic" src="img/my9370.jpg">
+			<div id="contentwrapper">
+				<p>My computer used to be a <strong>lot</strong> bigger.</p>
+        	<!-- stuff about me goes here -->
+	    	</div>
+		</div>
+
+		<div class="sidesection">
+			<img class="photobubble" name="bubblepic" src="img/scottishre_sign.jpg">
+			<div id="contentwrapper">
+				<p>I worked at some interesting places that made and lost a lot of money...</p>
+        	<!-- stuff about me goes here -->
+	    	</div>
+		</div>
+
+		<div class="sidesection">
+			<img class="photobubble" name="bubblepic" src="img/commencing.jpg">
+			<div id="contentwrapper">
+				<p>I have a terrific hubby and two amazing smart boys!</p>
+        	<!-- stuff about me goes here -->
+			</div>
+		</div>
+
+		<div class="sidesection">
+			<img class="photobubble" name="bubblepic" src="img/paulaheadshot.jpg">
+			<div id="contentwrapper">
+				<p>A longer version of my career adventures can be found <a href="http://technowoman.blogspot.com" target="_blank">here.</a></p>
+        	<!-- stuff about me goes here -->
+			</div>
+		</div>
+
+		<div class="sidesection">
+			<img class="photobubble" name="bubblepic" src="img/mrsroberts.png">
+			<div id="contentwrapper">
+				<p>Mrs. Roberts from <a href="http://www.xkcd.com/341/" target="_blank">xkcd</a> is one of my heros.</p>
+        	<!-- stuff about me goes here -->
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+</body>
+</html>
