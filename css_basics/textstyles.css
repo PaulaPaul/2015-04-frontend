@@ -1,0 +1,24 @@
+#emclass {
+	font-size: 3em;
+}
+
+#pctclass {
+	font-size: 100%;
+}
+
+#pxclass {
+	font-size: 30px;
+	font-family: 'Raleway', Arial, sans-serif;
+	border: 3px dashed green;
+	border-radius: 10px;
+	border-collapse: 50;
+	height: 200;
+	width:  300;
+	text-align: justify;
+}
+
+/* if you can't find 'Raleway' on google fonts, substitute Arial, then sans-serif */
+#webfont {
+	border-collapse: yes;
+	font-family: 'Raleway', Arial, sans-serif;
+}

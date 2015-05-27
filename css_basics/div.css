@@ -1,0 +1,38 @@
+div {
+	height:	50px;
+	width:	100px;
+	padding: 5px;
+	border: 2px solid black;
+	border-radius: 5px;
+	margin: 10px;
+	float: right;
+}
+#div1 {
+	background-color: red;
+	display: inline-block;
+	position: fixed;
+	padding-left: 120px;
+}
+#div1:hover {
+	display: absolute;
+	margin-right: 0;
+	margin-left: 0;
+	
+}
+
+#div2 {
+	background-color: blue;
+	display: inline-block;
+	position: absolute;
+	margin-top: 200px;
+}
+
+#div3 {
+	background-color: green;
+	display: inline-block;
+}
+
+#div4 {
+	background-color: yellow
+	display: inline-block;
+}

@@ -1,0 +1,82 @@
+/* can be an html element, a class or an id.  
+   property can be height, width, background-color,... value is red, blue, 37px, etc. */
+/*selector{
+	property: value;
+	property: value;
+	property: value;
+	property: value;
+	property: value;
+  }
+
+css applies to HTML:
+	element  (name or nested element type, like div p for paragraph in a div)
+	class ( .classname)
+	id    ( #id_name )
+  */
+
+/* splat is the 'change everything' selector */
+* {
+	color: darkseagreen;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+
+#backdrop {
+	height: 600px;
+	width: 600px;
+	color: red;
+	background-image: url("paulaheadshot.jpg");
+	background-color: blue;
+	font-size: 30px
+	background-repeat: no-repeat;
+	background-size: 100%;
+	opacity: .2;
+
+}
+
+
+
+a {
+	color: blue;
+}
+
+a:visited {
+	color: yellow;
+}
+
+a:hover {
+	font-size: 22px;
+	color: black;
+}
+
+img:hover {
+	color: rgba(255,255,255,1);
+	height: 300px;
+}
+
+p {
+	color: red;
+	font-size: 20px;
+}
+/* p within a div tag */
+div p {
+	color: blue;
+	font-size: 10px;
+
+}
+/* span wihin a p tag */
+p span {
+	font-size: 50px;
+}
+/* class reference for 'lucky'  classes are referenced by .classname */
+.lucky {
+	color: purple;
+	font-size: 30px;
+}
+/* ID reference for 'lastline - id reference by #id' */
+#lastline {
+	color: grey;
+	font-size: 14px;
+}
+
+
