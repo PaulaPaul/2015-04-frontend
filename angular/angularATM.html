@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html  ng-app>
+<head>
+	<title>Angular ATM</title>
+  <!-- Materialize Compiled and minified CSS -->
+  <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+</head>
+<body ng-controller="AtmController">
+  <div class="row">
+  <div class="col s12 m12">
+    <div class="card-panel teal">
+      <span class="white-text"> 
+        <h2>Angular ATM</h2>
+        <p>Enter amounts for Checking deposit or withdrawal, or click below to check your balances</p>
+        <div>
+          Check Balances  <button ng-click="getbalance()" id="balance" type="button" class="btn-floating waves-light green">$</button>
+        </div>
+       </span>
+    </div>
+  </div>
+</div>
+<div class='panel'>
+  <table>
+    <thead>
+      <tr>
+        <td>Deposits</td>
+        <td>Withdrawals</td>
+        <td>Xfer to Checking</td>
+        <td>Xfer to Savings</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <input id="d_amount" type="number" ng-model="d_amount">
+          <button ng-click="deposit()" value="Send" id="deposit" type="button" class="btn waves-light">Deposit</button>
+        </td>
+        <td>
+          <input id="w_amount" type="number" ng-model="w_amount">
+          <button ng-click="withdraw()"  id="withdraw" type="button" class="btn waves-light">Withdraw</button>
+        </td>
+         <td>
+          <input id="x2c_amount" type="number" ng-model="x2c_amount">
+          <button ng-click="x2c()" id="x2check" type="button" class="btn waves-light">Xfer to Checking</button>
+        </td>
+        <td>
+          <input id="x2s_amount" type="number" ng-model="x2s_amount">
+          <button ng-click="x2s()" id="x2save" type="button" class="btn waves-light">Xfer to Savings</button>
+        </td>
+      </tr>
+      <tr>
+        <td colspan='4'><p id="message">{{message}}</p></td>
+      </tr>
+    </tbody>
+  </table>
+</div>  
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.17/angular.min.js'></script>
+	  <script src= "angularATM.js" type="text/javascript"></script>  
+</body>
+</html>

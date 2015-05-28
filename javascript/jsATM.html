@@ -2,7 +2,6 @@
 <html>
 <head>
 	<title>JavaScript ATM</title>
-  <script type="text/javascript" src="jsATM.js"></script>
     <!-- Materialize Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css">
 </head>
@@ -14,7 +13,7 @@
         <h2>jQuery ATM</h2>
         <p>Enter amounts for Checking deposit or withdrawal, or click below to check your balances</p>
         <div>
-          Check Balances  <button id="balance" type="button" class="btn-floating waves-light green">$</button>
+          Check Balances  <button id="balance" type="button" class="btn-floating waves-light green" onclick="getbalance()">$</button>
         </div>
        </span>
     </div>
@@ -34,19 +33,19 @@
       <tr>
         <td>
           <input id="d_amount" type="number">
-          <button id="deposit" type="button" class="btn waves-light">Deposit</button>
+          <button id="deposit" type="button" class="btn waves-light" onclick="deposit()">Deposit</button>
         </td>
         <td>
           <input id="w_amount" type="number">
-          <button id="withdraw" type="button" class="btn waves-light">Withdraw</button>
+          <button id="withdraw" type="button" class="btn waves-light" onClick="withdraw()">Withdraw</button>
         </td>
          <td>
           <input id="x2c_amount" type="number">
-          <button id="x2check" type="button" class="btn waves-light">Xfer to Checking</button>
+          <button id="x2check" type="button" class="btn waves-light" onClick="x2c()">Xfer to Checking</button>
         </td>
         <td>
           <input id="x2s_amount" type="number">
-          <button id="x2save" type="button" class="btn waves-light">Xfer to Savings</button>
+          <button id="x2save" type="button" class="btn waves-light" onClick="x2s()">Xfer to Savings</button>
         </td>
       </tr>
       <tr>
@@ -56,6 +55,8 @@
   </table>
 </div>  
     <!-- Materialize Compiled and minified JavaScript -->
+   <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <script type="text/javascript" src="jsATM.js"></script>
 </body>
 </html>
