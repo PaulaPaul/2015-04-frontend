@@ -1,3 +1,7 @@
+function writeMyName() {
+		document.getElementById("theName").innerHTML = "Paula was here!";
+	}
+
 function tryIt() {
 	if (document.getElementById("the-button").innerHTML == "Try It") {
 		document.getElementById("the-text").innerHTML = "Paragraph changed.";
